@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - IronNest Fitness</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="nav"></div>
+<header class="banner"><div class="container"><h1>Contact us</h1><p class="lead mb-0">Questions about plans, timings or a free trial? We reply within a day.</p></div></header>
+<section class="py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5">
+        <h2>Visit IronNest</h2>
+        <div class="contact-box"><h5>Address</h5><p class="mb-0">IronNest Fitness, Main Road, Your City</p></div>
+        <div class="contact-box"><h5>Phone</h5><p class="mb-0"><a href="tel:+910000000000">+91 00000 00000</a></p></div>
+        <div class="contact-box"><h5>Email</h5><p class="mb-0"><a href="mailto:hello@ironnest.in">hello@ironnest.in</a></p></div>
+        <div class="contact-box"><h5>Timings</h5><p class="mb-0">Mon to Sat: 5 AM to 11 PM<br>Sunday: 6 AM to 1 PM</p></div>
+      </div>
+      <div class="col-lg-7">
+        <h2>Send a message</h2>
+        <form id="contactForm" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6"><label for="name" class="form-label">Name</label><input id="name" class="form-control" required><div class="invalid-feedback">Enter your name.</div></div>
+            <div class="col-md-6"><label for="phone" class="form-label">Phone</label><input id="phone" type="tel" pattern="[0-9]{10}" class="form-control" required><div class="invalid-feedback">Enter a 10-digit phone number.</div></div>
+            <div class="col-12"><label for="email" class="form-label">Email</label><input id="email" type="email" class="form-control" required><div class="invalid-feedback">Enter a valid email address.</div></div>
+            <div class="col-12"><label for="topic" class="form-label">Topic</label><select id="topic" class="form-select" required><option value="">Choose a topic</option><option>Free trial</option><option>Membership plans</option><option>Personal training</option><option>Other</option></select><div class="invalid-feedback">Select a topic.</div></div>
+            <div class="col-12"><label for="msg2" class="form-label">Message</label><textarea id="msg2" rows="4" class="form-control" minlength="10" required></textarea><div class="invalid-feedback">Write at least 10 characters.</div></div>
+          </div>
+          <button class="btn btn-nest mt-3">Send message</button>
+          <div id="msg" class="mt-3 text-success" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="foot"></div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="layout.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
